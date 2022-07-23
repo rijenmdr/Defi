@@ -1,0 +1,30 @@
+.sign-up-now .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 1rem;
+}
+
+.sign-up-now .left {
+  text-align: center;
+}
+
+.sign-up-now img {
+  width: 20rem;
+}
+
+.sign-up-now img:hover {
+  transform: scale(1.1);
+  transition: 0.5s ease-in-out;
+}
+
+.sign-up-now .right p {
+  margin: 2rem 0;
+}
+
+@media (max-width: 980px) {
+  .sign-up-now .container {
+    grid-template-columns: 1fr;
+  }
+}

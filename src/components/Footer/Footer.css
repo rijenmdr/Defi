@@ -1,0 +1,50 @@
+.footer {
+  background-color: var(--background);
+  padding: 5rem 0;
+  clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
+}
+
+.footer .container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.footer .col {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.footer .col h5 {
+  margin: 1rem 0;
+}
+
+.footer .col h5::after {
+  content: "";
+  border-bottom: 4px solid var(--primary);
+  position: absolute;
+  left: 0px;
+  top: 40px;
+  width: 30px;
+}
+
+.footer a {
+  font-size: 1rem;
+}
+
+.footer .icon {
+  color: #303030;
+  margin-right: 4px;
+}
+
+@media screen and (max-width: 940px) {
+  .footer .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer .col-1 {
+    display: none;
+  }
+}
